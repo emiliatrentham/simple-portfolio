@@ -2,6 +2,7 @@
 
 ![](https://img.shields.io/badge/CSS-blue.svg)
 ![](https://img.shields.io/badge/HTML-orange.svg)
+![](https://img.shields.io/badge/Flexbox-blue.svg)
 
 
 ## Table of Contents

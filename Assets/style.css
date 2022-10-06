@@ -120,10 +120,6 @@ a:active {
   color: dimgray;
 }
 
-.article-class img {
-  max-width: 250px;
-  max-height: 250px;
-}
 
 #Projects {
   margin-bottom: 20px;
@@ -155,7 +151,7 @@ a:active {
   cursor: pointer;
 }
 
-section {
+/* section {
   display: inline-flex;
   height: 300px;
   justify-content: space-between;
@@ -191,11 +187,16 @@ section {
   background-color: turquoise;
   padding: 5px;
   align-items: left;
-}
+} */
 
-body h1 {
+/* body h1 {
   padding: 0.5rem;
   text-align-last: center;
+} */
+
+.article-class img {
+    max-width: 250px;
+    max-height: 250px;
 }
 
 :not(.content) > h3 {

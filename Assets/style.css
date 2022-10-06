@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+
+.header {
+    height: 100px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:dimgrey;  
+}
+
+.header h1 {
+    margin-left:0%
+    margin-bottom: 30px;
+    display:inline-block;
+    font-size: 48px;
+    color:dimgray;
+    border-style: none;
+    background-color: turquoise;
+}
+
+.hero h2 {
+    margin-top: 250px;
+    margin-right: 15px;
+    font-size: 28px;
+    color:dimgray;
+    border-style: none;
+    background-color: turquoise;
+    float: right;    
+}
+
+  
+.header nav {
+    margin-right: 15px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header nav li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px; 
+    list-style-type: none;
+    font-size: 22px; 
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("santamaria.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.article-class {
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-left: 300px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:dimgray;
+}
+
+h2.alignleft {
+    float: left;
+    color:dimgray;
+}
+
+#Contact-me  {
+    height: 100px;
+    font-size: 22px;
+    display: inline-block; 
+}
+
+.article-class img {
+    max-height: 200px;
+}
+
+.article-class h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+header a, a:link, a:focus, a:hover, a:active{
+    color: turquoise;
+    text-decoration: underline; 
+    cursor: pointer;
+  }
+  
+article a, a:link, a:focus, a:hover, a:active{
+    color: dimgrey;
+    text-decoration: underline; 
+    cursor: pointer;
+  
+  }
+  
+/* .footer h2 {
+    font-size: 20px;
+    color:dimgray;
+    text-align: center;
+} */

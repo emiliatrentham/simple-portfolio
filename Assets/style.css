@@ -1,140 +1,206 @@
+/* Universal selector */
 * {
-    /* box-sizing: border-box; */
-    font-family: Arial, sans-serif;
+  /* box-sizing: border-box; */
+  font-family: Arial, sans-serif;
 }
 
+/* Sets h1 - h3 bottom margin */
 h1,
 h2,
 h3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
+/* Sets criteria for main title */
 h1 {
-    /* box-sizing: border-box;  */
-    display: inline-block;
-    font-size: 2rem;
-    line-height: 3rem;
-    color:dimgray;
-    border-style: none;
-    background-color: turquoise;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: dimgray;
+  border-style: none;
+  background-color: turquoise;
+  padding: 5px;
 }
 
-.greeting h2 {
-    float:right;
-    margin-right: 10px;
-    margin-top: 225px;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    color:dimgray;
-    border-style: none;
-    background-color: turquoise;  
+/* Sets criteria for subtitle */
+h2 {
+  box-sizing: border-box;
+  float: right;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: dimgray;
+  border-style: none;
+  background-color: turquoise;
+  padding: 5px;
+  vertical-align: text-bottom;
 }
 
-p{
-    margin-bottom: 1rem;
+/* sets paragraph bottom margin */
+p {
+  margin-bottom: 1rem;
 }
 
+/* Sets body criteria*/
 body {
-    background-color: #d9dcd6;
-    padding: 0;
-    margin: 0;
+  background-color: #d9dcd6;
+  padding: 0;
+  margin: 0;
 }
 
+/* sets header criteria */
 header {
-    height: 80px;
-    padding: 20px;
-    background-color:dimgrey;  
+  height: 80px;
+  padding: 20px;
+  background-color: dimgrey;
 }
 
-header a, a:link, a:focus, a:hover, a:active{
-    color: turquoise;
-    text-decoration: underline; 
-    cursor: pointer;
-  }
-  
+/* Chages link color to turquoise plus additional criteria */
+header a,
+a:link,
+a:focus,
+a:hover,
+a:active {
+  color: turquoise;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sets nav position and font family */
 .header nav {
-    margin-right: 15px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: right;
 }
 
+/* Sets nav li criteria */
 .header nav li {
-    display: inline-block;
-    margin-left: 25px;
-    margin-top: 25px; 
-    list-style-type: none;
-    font-size: 22px; 
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 25px;
+  list-style-type: none;
+  font-size: 22px;
 }
 
+/* Sets background image criteria */
 .greeting {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("santamaria.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("santamaria.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* aligns text in main sections */
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
 
 /* aligns text in main sections */
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
 }
 
 /* ensures content in main section occupies only 75% of screen */
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20%;
-    font-size: 16px;
-    line-height: 24px;
+  width: 75%;
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.article-class {
-    margin-bottom: 20px;
-    padding: 5px;
-    margin-left: 20px;
-    height: 400px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:dimgray;
+/* styles article class */
+#About-me {
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  height: 300px;
+  color: dimgray;
 }
 
 .article-class img {
- max-width: 250px;
- max-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
-.article-class h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+#Projects {
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  height: 400px;
+  color: dimgray;
 }
 
-/* h2.alignleft {
-    float: left;
-    color:dimgray;
-} */
-
-#Contact-me  {
-    height: 100px;
-    font-size: 22px;
-    display: inline-block; 
+/* Enlarges Contact me section */
+#Contact-me {
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  height: 100px;
+  color: dimgray;
+  height: 150px;
+  font-size: 18px;
+  justify-content: space-around;
 }
 
-section a, a:link, a:focus, a:hover, a:active{
-    color: dimgrey;
-    text-decoration: underline; 
-    cursor: pointer;
-  
-  }
-  
-/* .footer h2 {
-    font-size: 20px;
-    color:dimgray;
-    text-align: center;
-} */
+/* Chages link color to grey plus additional criteria */
+section a,
+a:link,
+a:focus,
+a:active {
+  color: dimgrey;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section {
+  display: inline-flex;
+  height: 300px;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 0 0 33%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  margin-top: 5px;
+  border: 1px solid dimgrey;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 4px rgba(232, 102, 236, 1),
+    0 0 15px rgab(232, 102, 236, 1);
+}
+
+.cards h4 {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: dimgray;
+  border-style: none;
+  background-color: turquoise;
+  padding: 5px;
+  align-items: left;
+}
+
+body h1 {
+  padding: 0.5rem;
+  text-align-last: center;
+}
+
+:not(.content) > h3 {
+  font-size: 35px;
+  border-right: 5px solid dimgrey;
+  padding-top: 5px;
+  padding-right: 5px;
+}

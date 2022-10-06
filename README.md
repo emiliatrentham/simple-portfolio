@@ -1,4 +1,4 @@
-# my-student-bio
+# Portfolio
 
 ![](https://img.shields.io/badge/CSS-blue.svg)
 ![](https://img.shields.io/badge/HTML-orange.svg)
@@ -12,10 +12,10 @@
 * [Contact](#contact)
 
 ## Description
-
+My first portfolio created as a fun way to practice new skills and showcase my work recent samples.
 
 ## Photos
-<!-- ![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](project-screenshot.png) -->
+<!-- ![The Portfolio webpage includes a navigation bar, a header image, and cards with text and images.](project-screenshot.png) -->
 
 ## License
 Please refer to the LICENSE in the repo.

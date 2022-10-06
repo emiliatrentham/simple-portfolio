@@ -24,6 +24,9 @@ h1 {
 
 /* Sets criteria for subtitle */
 h2 {
+  display: flex;
+  margin-top: 225px;
+  margin-right: 10px;
   box-sizing: border-box;
   float: right;
   font-size: 1.5rem;
@@ -46,12 +49,15 @@ body {
   padding: 0;
   margin: 0;
 }
-
 /* sets header criteria */
 header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   height: 80px;
   padding: 20px;
   background-color: dimgrey;
+  
 }
 
 /* Chages link color to turquoise plus additional criteria */
@@ -89,54 +95,58 @@ a:active {
   background-position: center;
 }
 
-aligns text in main sections
+.About-me img {
+    display: flex;
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+h3 {
+    border-right: 5px solid dimgrey;
+    margin-right: 2rem; 
+    flex: 0 0 3%;
+    text-align: right; 
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 30px;
+    line-height: 1.1; 
+    color: dimgrey;
+}
+
+/* aligns text in main sections */
 .float-left {
   float: left;
   margin-right: 25px;
 }
 
 /* aligns text in main sections */
-.float-right {
+ .float-right {
   float: right;
   margin-left: 25px;
-}
+}  
 
 /* ensures content in main section occupies only 75% of screen */
-.content {
-  width: 75%;
+ .content {
+  width: 85%;
   display: inline-block;
   margin-left: 10%;
   font-size: 16px;
   line-height: 24px;
+  color: dimgrey;
 }
 
-h3 {
-    border-right: 4px solid red; 
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 75%;
-    font-size: 30px;
-    line-height: 1.1;
-}
-/* styles article class */
-#About-me {
-  margin-bottom: 20px;
-  padding: 5px;
-  margin-left: 20px;
-  height: 300px;
-  color: dimgray;
-}
-
-#Projects {
+/* #Projects {
   margin-bottom: 20px;
   padding: 5px;
   margin-left: 20px;
   height: 400px;
   color: dimgray;
-}
+}  */
 
 /* Enlarges Contact me section */
-#Contact-me {
+/* #Contact-me {
   margin-bottom: 20px;
   padding: 5px;
   margin-left: 20px;
@@ -145,37 +155,34 @@ h3 {
   height: 150px;
   font-size: 18px;
   justify-content: space-around;
-}
+}  */
 
 /* Chages link color to grey plus additional criteria */
-section a,
+.Contact-me a,
 a:link,
 a:focus,
 a:active {
   color: dimgrey;
   text-decoration: underline;
   cursor: pointer;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 section {
-  display: inline-flex;
-  height: 300px;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex: 0 0 33%;
-}
-
-.wrapper {
   display: flex;
   flex-wrap: wrap;
-}
+  height: 300px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 33 0 0%;
+} 
 
 .cards {
   background-color: white;
   padding: 10px;
-  width: 300px;
-  height: 150px;
+  width: 600px;
+  height: 200px;
   margin-top: 5px;
   border: 1px solid dimgrey;
   border-radius: 8px;
@@ -187,27 +194,39 @@ section {
 .cards img {
 width: 100%;
 height: 100%;
-}
+} 
 
 .cards h4 {
-  box-sizing: border-box;
   font-size: 1.5rem;
   line-height: 2.25rem;
   color: dimgray;
   border-style: none;
   background-color: turquoise;
-  padding: 5px;
-  align-items: left;
+  padding: 1px;
+  align-content:left;
 } 
 
-.article-class img {
-    max-width: 250px;
-    max-height: 250px;
+.article-class {
+    padding-bottom: 2rem;
+   
 }
 
-:not(.content) > h3 {
-  font-size: 35px;
-  border-right: 5px solid dimgrey;
-  padding-top: 5px;
-  padding-right: 5px;
+@media screen and (max-width: 992px) {
+    header {
+      
+    }
+  }
+   
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+     
+    }
+
+
+/*Small smartphones - image placeholders change color */ 
+ @media screen and (max-width: 576px) {
+    .sample-img {
+     
+    }
 }

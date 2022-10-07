@@ -58,7 +58,7 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 20px;
-  background-color: dimgrey; 
+  background-color: dimgrey;
 }
 
 /* Chages link color to turquoise plus additional criteria */
@@ -98,23 +98,23 @@ a:active {
 
 /* Sets "About Me" image criteria */
 .About-me img {
-    display: flex;
-    max-width: 200px;
-    max-height: 200px;
-    align-self: center;
-    margin-right: 2rem;
+  display: flex;
+  max-width: 200px;
+  max-height: 200px;
+  align-self: center;
+  margin-right: 2rem;
 }
 
 /* Sets h3 criteria */
 h3 {
-    border-right: 5px solid dimgrey;
-    margin-right: 2rem; 
-    flex: 0 0 3%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    font-size: 40px;
-    line-height: 1.1; 
-    color: dimgrey;
+  border-right: 5px solid dimgrey;
+  margin-right: 2rem;
+  flex: 0 0 3%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 40px;
+  line-height: 1.1;
+  color: dimgrey;
 }
 
 /* Aligns text in main sections */
@@ -124,7 +124,7 @@ h3 {
 }
 
 /* Ensures content in main section occupies only 75% of screen */
- .content {
+.content {
   width: 75%;
   display: inline-block;
   margin-left: 10%;
@@ -149,60 +149,60 @@ a:active {
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-} 
+}
 
 /* Sets placeholder criteria */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-    border: 3px solid turquoise;
-    background-color: aliceblue;
-    padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  border: 3px solid turquoise;
+  background-color: aliceblue;
+  padding: 5px;
 }
 
 /* Enlarges feature product */
-.flexbox-item-1{
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 400px;
-    border: 3px solid turquoise;
-    background-color: aliceblue;
+.flexbox-item-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 400px;
+  border: 3px solid turquoise;
+  background-color: aliceblue;
 }
 
 /* Adds feature project glow on hover */
 .flexbox-item-1 {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
-  .flexbox-item-1:hover, 
-  .flexbox-item-1:hover {
-    box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.flexbox-item-1:hover,
+.flexbox-item-1:hover {
+  box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
 }
 
 /* Adds projects glow on hover */
 .glow {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
-  .glow:hover, 
-  .glow:hover {
-    box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.glow:hover,
+.glow:hover {
+  box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
 }
 
 /*sets larger container image criteria */
 .img-1 {
-width: 100%;
-height: 70%;
+  width: 100%;
+  height: 70%;
 }
 
 /*sets smaller container image criteria */
 .images {
-width: 100%;
-height: 65%;
+  width: 100%;
+  height: 65%;
 }
 
 /*sets h4 criteria*/
@@ -212,44 +212,42 @@ height: 65%;
   color: dimgray;
   border-style: none;
   background-color: turquoise;
-  text-align:flex-start;
-}    
+  text-align: flex-start;
+}
 
 /* Adds article padding */
 .article-class {
-    padding-bottom: 2rem;  
+  padding-bottom: 2rem;
 }
 
-
 /* Enlarges Contact me section */
- #Contact-me {
+#Contact-me {
   margin-bottom: 10px;
   font-size: 20px;
   justify-content: space-between;
   text-align: center;
-}  
+}
 
 /* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
+  main,
+  nav {
+    flex-direction: column;
   }
+}
 
 /* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
+  main,
+  nav {
+    flex-direction: column;
   }
- 
-/* We are telling the main body and navbar to stack vertically in a column */ 
+}
+
+/* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 576px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
+  main,
+  nav {
+    flex-direction: column;
   }
- 
+}

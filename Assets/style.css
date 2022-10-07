@@ -1,16 +1,17 @@
 /* Universal selector */
 * {
-  /* box-sizing: border-box; */
   font-family: Arial, sans-serif;
 }
 
-/* Sets h1 - h3 bottom margin */
+/* Sets h1 - h4 bottom margin */
 h1,
-h2 {
+h2,
+h3,
+h4 {
   margin-bottom: 1rem;
 }
 
-/* Sets criteria for main title */
+/* Sets brand criteria */
 h1 {
   box-sizing: border-box;
   display: inline-block;
@@ -22,7 +23,7 @@ h1 {
   padding: 5px;
 }
 
-/* Sets criteria for subtitle */
+/* Sets subtitle criteria */
 h2 {
   display: flex;
   margin-top: 225px;
@@ -38,26 +39,26 @@ h2 {
   vertical-align: text-bottom;
 }
 
-/* sets paragraph bottom margin */
+/* Sets paragraph bottom margin */
 p {
   margin-bottom: 1rem;
 }
 
-/* Sets body criteria*/
+/* Sets body criteria */
 body {
   background-color: #d9dcd6;
   padding: 0;
   margin: 0;
 }
-/* sets header criteria */
+
+/* Sets header criteria */
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 80px;
   padding: 20px;
-  background-color: dimgrey;
-  
+  background-color: dimgrey; 
 }
 
 /* Chages link color to turquoise plus additional criteria */
@@ -71,12 +72,12 @@ a:active {
   cursor: pointer;
 }
 
-/* Sets nav position and font family */
+/* Sets navigation position */
 .header nav {
   float: right;
 }
 
-/* Sets nav li criteria */
+/* Sets navigation link criteria */
 .header nav li {
   display: inline-block;
   margin-left: 25px;
@@ -85,7 +86,7 @@ a:active {
   font-size: 22px;
 }
 
-/* Sets background image criteria */
+/* Sets main background image criteria */
 .greeting {
   height: 300px;
   width: 100%;
@@ -95,6 +96,7 @@ a:active {
   background-position: center;
 }
 
+/* Sets "About Me" image criteria */
 .About-me img {
     display: flex;
     max-width: 200px;
@@ -103,59 +105,33 @@ a:active {
     margin-right: 2rem;
 }
 
+/* Sets h3 criteria */
 h3 {
     border-right: 5px solid dimgrey;
     margin-right: 2rem; 
     flex: 0 0 3%;
-    text-align: right; 
     padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 1.1; 
     color: dimgrey;
 }
 
-/* aligns text in main sections */
+/* Aligns text in main sections */
 .float-left {
   float: left;
   margin-right: 25px;
 }
 
-/* aligns text in main sections */
- .float-right {
-  float: right;
-  margin-left: 25px;
-}  
-
-/* ensures content in main section occupies only 75% of screen */
+/* Ensures content in main section occupies only 75% of screen */
  .content {
-  width: 85%;
+  width: 75%;
   display: inline-block;
   margin-left: 10%;
   font-size: 16px;
   line-height: 24px;
   color: dimgrey;
 }
-
-/* #Projects {
-  margin-bottom: 20px;
-  padding: 5px;
-  margin-left: 20px;
-  height: 400px;
-  color: dimgray;
-}  */
-
-/* Enlarges Contact me section */
-/* #Contact-me {
-  margin-bottom: 20px;
-  padding: 5px;
-  margin-left: 20px;
-  height: 100px;
-  color: dimgray;
-  height: 150px;
-  font-size: 18px;
-  justify-content: space-around;
-}  */
 
 /* Chages link color to grey plus additional criteria */
 .Contact-me a,
@@ -169,58 +145,111 @@ a:active {
   margin-left: 2rem;
 }
 
-.wrapper {
+/* Sets container wrap */
+.flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  justify-content: space-around;
-  flex-direction: row;
-  flex: 0 0 33.333%;
-  border: 1px solid dimgrey;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-  box-shadow: inset 0px 0px 4px rgba(232, 102, 236, 1),
-    0 0 15px rgab(232, 102, 236, 1);
- margin-top: 5px;
- padding: 10px;
 } 
 
-.wrapper img {
-    width: 100%;
-    height: 100%; 
+/* Sets placeholder criteria */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border: 3px solid turquoise;
+    background-color: aliceblue;
+    padding: 5px;
 }
 
-.wrapper h4 {
+/* Enlarges feature product */
+.flexbox-item-1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 400px;
+    border: 3px solid turquoise;
+    background-color: aliceblue;
+}
+
+/* Adds feature project glow on hover */
+.flexbox-item-1 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .flexbox-item-1:hover, 
+  .flexbox-item-1:hover {
+    box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
+}
+
+/* Adds projects glow on hover */
+.glow {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .glow:hover, 
+  .glow:hover {
+    box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
+}
+
+/*sets larger container image criteria */
+.img-1 {
+width: 100%;
+height: 70%;
+}
+
+/*sets smaller container image criteria */
+.images {
+width: 100%;
+height: 65%;
+}
+
+/*sets h4 criteria*/
+.flexbox-container h4 {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: dimgray;
   border-style: none;
   background-color: turquoise;
-  padding: 1px;
-  align-content:flex-start;
-}  
+  text-align:flex-start;
+}    
 
+/* Adds article padding */
 .article-class {
-    padding-bottom: 2rem;
-   
+    padding-bottom: 2rem;  
 }
 
+
+/* Enlarges Contact me section */
+ #Contact-me {
+  margin-bottom: 10px;
+  font-size: 20px;
+  justify-content: space-between;
+  text-align: center;
+}  
+
+/* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
-    header {
-      
+    main,
+    nav {
+      flex-direction: column;
     }
   }
-   
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+
+/* We are telling the main body and navbar to stack vertically in a column */
+@media screen and (max-width: 768px) {
+    main,
     nav {
-     
+      flex-direction: column;
     }
-
-
-/*Small smartphones - image placeholders change color */ 
- @media screen and (max-width: 576px) {
-    .sample-img {
-     
+  }
+ 
+/* We are telling the main body and navbar to stack vertically in a column */ 
+@media screen and (max-width: 576px) {
+    main,
+    nav {
+      flex-direction: column;
     }
- }
+  }
+ 

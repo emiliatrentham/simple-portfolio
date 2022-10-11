@@ -100,7 +100,6 @@ a:active {
   flex-direction: column;
   font-size: 45px;
   color: dimgrey;
-  margin-left: 20px;
 }
 
 /* Sets criteria for project right columns */
@@ -110,7 +109,7 @@ a:active {
   width: 75%;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-right: 20px;
+  margin-right: 50px;
   margin-left: 20px;
 }
 
@@ -127,7 +126,6 @@ a:active {
 /* Sets about me section criteria */
 .About-me {
   border-left: 2px solid dimgrey;
-  padding-right: 1rem;
   color: dimgrey;
   align-self: flex-end;
   margin-bottom: 1.5rem;
@@ -152,6 +150,8 @@ a:active {
   flex-direction: row;
   align-items: center;
   align-content: center;
+  position: relative;
+  display: inline-block;
 }
 
 /* Sets container 2 criteria */
@@ -170,23 +170,23 @@ a:active {
 
 /* Sets placeholder criteria */
 .cards {
-  /* align-self: flex-start; */
   border: 3px solid turquoise;
-  background-color: aliceblue;
   flex: 0 0 31%;
   margin-top: 5px;
   margin-right: 5px;
   margin-left: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
 /* Enlarges feature product */
 .flexbox-item-1 {
-  align-self: flex-start;
   border: 3px solid turquoise;
-  background-color: aliceblue;
-  flex: 0 0 97%;
+  flex: 0 0 90%;
   margin-top: 10px;
   margin-left: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
 /* Adds feature project glow on hover */
@@ -209,47 +209,40 @@ a:active {
   box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
 }
 
-/*sets larger container image criteria */
+/* Sets larger container image criteria */
 .img-1 {
   width: 100%;
   height: 100%;
 }
 
-/*sets smaller container image criteria */
+/* Sets smaller container image criteria */
 .images {
   width: 100%;
   height: 100%;
 }
 
-.title {
-  position: absolute; 
-  top: 750px;
-  left: 400px;
-  border-style: none;
-  background-color: turquoise;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  color: dimgrey;
-}
-
-/*sets h4 criteria*/
-.flexbox-container h4 {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  color: dimgray;
-  border-style: none;
-  background-color: turquoise;
+/* Telling main project title where to align over image */
+.text-1 {
+  position: absolute;
+  top: 60%;
   text-align: flex-start;
+  border-style: none;
+  background-color: turquoise;
+  font-size: 1.5rem;
+  color: dimgrey;
+  padding: 10px;
 }
 
 /* Sets cards criteria */
-.cards h4 {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  color: dimgray;
+.cards-h4 {
+  position: absolute;
+  top: 55%;
+  text-align: flex-start;
   border-style: none;
   background-color: turquoise;
-  text-align: flex-start;
+  font-size: 1.5rem;
+  color: dimgrey;
+  padding: 5px;
 }
 
 /*  Contact me section */
@@ -298,12 +291,26 @@ a:active {
   }
 }
 
-/* We are telling the main body and navbar to stack vertically in a column */
+/* Telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
   nav,
   parent {
     /* flex-direction: column; */
     flex: 0 0 33.333%;
     max-width: 33.333%;
+  }
+}
+
+/* Telling the left container to maintain a left margin at smaller screen sizes */
+@media screen and (max-width: 576px) {
+  .left-container {
+    margin-left: 100px;
+  }
+}
+
+/* Telling the left container to maintain a left margin at smaller screen sizes */
+@media screen and (max-width: 768px) {
+  .left-container {
+    margin-left: 100px;
   }
 }

@@ -222,6 +222,16 @@ a:active {
   height: 80%;
 }
 
+.yes {
+  position: absolute;
+  top: 1100px;
+  left: 400px;
+  border-style: none;
+  background-color: turquoise;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 /*sets h4 criteria*/
 .flexbox-container h4 {
   font-size: 1.5rem;

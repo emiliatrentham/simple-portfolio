@@ -1,22 +1,13 @@
 /* Universal selector */
 * {
   font-family: Arial, sans-serif;
-}
-
-/* Sets h1 - h4 bottom margin */
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 /* Sets brand criteria */
 h1 {
-  box-sizing: border-box;
-  display: inline-block;
+  display: flex;
   font-size: 2rem;
-  line-height: 3rem;
   color: dimgray;
   border-style: none;
   background-color: turquoise;
@@ -27,21 +18,20 @@ h1 {
 h2 {
   display: flex;
   margin-top: 225px;
-  margin-right: 10px;
-  box-sizing: border-box;
+  margin-right: 70px;
   float: right;
   font-size: 1.5rem;
-  line-height: 2.25rem;
   color: dimgray;
   border-style: none;
   background-color: turquoise;
   padding: 5px;
-  vertical-align: text-bottom;
 }
 
 /* Sets paragraph bottom margin */
 p {
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* Sets body criteria */
@@ -56,7 +46,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   padding: 20px;
   background-color: dimgrey;
 }
@@ -75,6 +65,7 @@ a:active {
 /* Sets navigation position */
 .header nav {
   float: right;
+  margin-right: 40px;
 }
 
 /* Sets navigation link criteria */
@@ -96,83 +87,107 @@ a:active {
   background-position: center;
 }
 
+/* Sets project display */
+.parent {
+  display: flex;
+}
+
+/* Sets criteria for project left column */
+.left-container {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 45px;
+  color: dimgrey;
+  margin-left: 20px;
+}
+
+/* Sets criteria for project right columns */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 /* Sets "About Me" image criteria */
 .About-me img {
-  display: flex;
   max-width: 200px;
   max-height: 200px;
   align-self: center;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Sets h3 criteria */
-h3 {
-  border-right: 5px solid dimgrey;
-  margin-right: 2rem;
-  flex: 0 0 3%;
+/* Sets about me section criteria */
+.About-me {
+  border-left: 2px solid dimgrey;
   padding-right: 1rem;
-  padding-left: 1rem;
-  font-size: 40px;
-  line-height: 1.1;
   color: dimgrey;
+  align-self: flex-end;
+  margin-bottom: 1.5rem;
 }
 
 /* Aligns text in main sections */
 .float-left {
   float: left;
   margin-right: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
-/* Ensures content in main section occupies only 75% of screen */
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 10%;
-  font-size: 16px;
-  line-height: 24px;
+/* Sets container 1 criteria */
+.flexbox-container-1 {
+  border-left: 2px solid dimgrey;
+  padding-right: 1rem;
   color: dimgrey;
-}
-
-/* Chages link color to grey plus additional criteria */
-.Contact-me a,
-a:link,
-a:focus,
-a:active {
-  color: dimgrey;
-  text-decoration: underline;
-  cursor: pointer;
-  margin-right: 2rem;
-  margin-left: 2rem;
-}
-
-/* Sets container wrap */
-.flexbox-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Sets placeholder criteria */
-.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 250px;
-  height: 250px;
-  margin: 5px;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+/* Sets container 2 criteria */
+.flexbox-container-2 {
+  border-left: 2px solid dimgrey;
+  padding-right: 1rem;
+  color: dimgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-direction: row;
+}
+
+/* Sets placeholder criteria */
+.cards {
+  /* align-self: flex-start; */
   border: 3px solid turquoise;
   background-color: aliceblue;
-  padding: 5px;
+  flex: 0 0 30%;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 1rem;
 }
 
 /* Enlarges feature product */
 .flexbox-item-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 800px;
-  height: 400px;
+  align-self: flex-start;
   border: 3px solid turquoise;
   background-color: aliceblue;
+  flex: 0 0 97%;
+  margin-top: 10px;
+  margin-left: 1rem;
 }
 
 /* Adds feature project glow on hover */
@@ -186,25 +201,25 @@ a:active {
 }
 
 /* Adds projects glow on hover */
-.glow {
+.cards {
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
 }
-.glow:hover,
-.glow:hover {
+.cards:hover,
+.cards:hover {
   box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
 }
 
 /*sets larger container image criteria */
 .img-1 {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 /*sets smaller container image criteria */
 .images {
   width: 100%;
-  height: 65%;
+  height: 80%;
 }
 
 /*sets h4 criteria*/
@@ -217,39 +232,68 @@ a:active {
   text-align: flex-start;
 }
 
-/* Adds article padding */
-.article-class {
-  padding-bottom: 2rem;
+/* Sets cards criteria */
+.cards h4 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: dimgray;
+  border-style: none;
+  background-color: turquoise;
+  text-align: flex-start;
 }
 
-/* Enlarges Contact me section */
-#Contact-me {
-  margin-bottom: 10px;
-  font-size: 20px;
+/*  Contact me section */
+footer {
+  display: flex;
+  border-left: 2px solid dimgrey;
+  padding-right: 1rem;
+  color: dimgrey;
   justify-content: space-between;
-  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  height: 70px;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+/* Chages link color to grey plus additional criteria */
+.Contact-me a,
+a:link,
+a:focus,
+a:active {
+  color: dimgrey;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 /* We are telling the main body and navbar to stack vertically in a column */
-@media screen and (max-width: 992px) {
-  main,
-  nav {
-    flex-direction: column;
+@media screen and (max-width: 576px) {
+  nav,
+  parent {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
 /* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+  nav,
+  parent {
+    /* flex-direction: column; */
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
 /* We are telling the main body and navbar to stack vertically in a column */
-@media screen and (max-width: 576px) {
-  main,
-  nav {
-    flex-direction: column;
+@media screen and (max-width: 992px) {
+  nav,
+  parent {
+    /* flex-direction: column; */
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
   }
 }

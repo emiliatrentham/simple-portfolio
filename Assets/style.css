@@ -45,9 +45,10 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   height: 100px;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: dimgrey;
 }
 
@@ -108,7 +109,7 @@ a:active {
   flex-direction: column;
   width: 75%;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-right: 50px;
   margin-left: 20px;
 }
@@ -299,7 +300,18 @@ a:active {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+  h1 {
+    margin-bottom: 0px;
+    max-height: 60px;
+  }
+  .cards-h4 {
+    font-size: 14px;
+  }
+  .cards {
+    flex: 0 0 100%;
+  }
 }
+
 
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 576px) {

@@ -122,6 +122,7 @@ a:active {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
+  border-radius: 50%;
 }
 
 /* Sets about me section criteria */
@@ -172,10 +173,9 @@ a:active {
 /* Sets placeholder criteria */
 .cards {
   border: 3px solid turquoise;
-  flex: 0 0 31%;
+  /* flex: 0 0 31%; */
   margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 1rem;
+  margin-left: 5px;
   position: relative;
   display: inline-block;
 }
@@ -204,6 +204,7 @@ a:active {
 .cards {
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
+  margin-left: 15px;
 }
 .cards:hover,
 .cards:hover {
@@ -213,13 +214,16 @@ a:active {
 /* Sets larger container image criteria */
 .img-1 {
   width: 100%;
-  height: 100%;
+  height: 110%;
+  object-fit: fill;
 }
 
 /* Sets smaller container image criteria */
 .images {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 200px;
+  object-fit: fill;
+
 }
 
 /* Telling main project title where to align over image */
@@ -265,12 +269,16 @@ footer {
 a:link,
 a:focus,
 a:active {
-  color: dimgrey;
+  color: turquoise;
   text-decoration: underline;
   cursor: pointer;
   margin-bottom: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.contact-me a {
+  color: dimgray;
 }
 
 /* We are telling the main body and navbar to stack vertically in a column */

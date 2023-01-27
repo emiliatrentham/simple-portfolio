@@ -5,43 +5,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>Emilia Trentham</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#About-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Projects">Work</a>
-                </li>
-                <li>
-                    <a href="#Contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="hero-img">
+        <section class="top-bar">
+            <h1>Emilia Trentham</h1>
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="nav-container">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="n_bar">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item"><a class="nav-link" href="#About">About Me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="greeting">
+            <h2>Welcome to my portfolio!</h2>
+        </section>
     </header>
 
-    <div class="greeting">
-        <h2>Welcome to my portfolio!</h2>
-    </div>
+
 
     <main class="parent">
 
         <section class="left-container">
-            <h3 class="column-left" id="About-me">
-                <pre>   About
-        Me</pre>
+            <h3 class="column-left" id="About">
+                <pre>
+                    About Me
+                </pre>
             </h3>
-            <h3 class="column-left" id="Projects">Projects</h3>
-            <h3 class="column-left" id="Contact-me">
-                <pre> Contact 
-        Me</pre>
+            <h3 class="column-left" id="Projects">
+                <pre>
+                    Projects
+                </pre>
+            </h3>
+            <h3 class="column-left" id="Contact">
+                <pre>
+                    Contact Me
+                </pre>
             </h3>
         </section>
 
@@ -50,22 +64,27 @@
 
                 <img src="./Assets/Emilia_22.jpg" alt="A picture of me" class="float-left" /></img>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit urna, tristique porta penatibus habitasse pharetra cum hac, netus sollicitudin dictum imperdiet conubia sem tortor. Ligula praesent mus cras nisi ridiculus vulputate urna montes maecenas tempus netus proin, iaculis quisque posuere dis tellus ac nostra class faucibus felis bibendum, torquent cubilia dui sociis gravida est hac venenatis fermentum nam risus. Condimentum id ridiculus quam leo placerat volutpat mollis, aptent faucibus eget ullamcorper conubia sollicitudin nullam rutrum, ut justo hendrerit sed montes bibendum. Elementum dictumst placerat vitae potenti ad mattis parturient, metus sociis montes nascetur nam aptent hendrerit nostra, egestas fermentum morbi tristique pulvinar risus.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit urna, tristique porta penatibus habitasse
+                    pharetra cum hac, netus sollicitudin dictum imperdiet conubia sem tortor. Ligula praesent mus cras
+                    nisi ridiculus vulputate urna montes maecenas tempus netus proin, iaculis quisque posuere dis tellus
+                    ac nostra class faucibus felis bibendum, torquent cubilia dui sociis gravida est hac venenatis
+                    fermentum nam risus. Condimentum id ridiculus quam leo placerat volutpat mollis, aptent faucibus
+                    eget ullamcorper conubia sollicitudin nullam rutrum, ut justo hendrerit sed montes bibendum.
+                    Elementum dictumst placerat vitae potenti ad mattis parturient, metus sociis montes nascetur nam
+                    aptent hendrerit nostra, egestas fermentum morbi tristique pulvinar risus.
                 </p>
             </section>
 
             <div>
-                <article class="flexbox-container-1">
-                    <section class="flexbox-item-1">
-                        <a href="https://github.com/emiliatrentham/semantic-html-refactor">
-                            <h4 class="text-1">HTML Refactor</h4>
-                            <img class="img-1" src="Assets/horiseon.png" alt="Horiseon Group" />
+                <section class="flexbox-container-1">
+                    <article class="main-card">
+                        <a href="https://github.com/sely1724/your-goals-tracker">
+                            <h4 class="text-1">Goalie</h4>
+                            <img class="img-1" src="Assets/Goalie.png" alt="Goalie" />
                         </a>
-                    </section>
-                </article>
-            </div>
-
-            <div>
+                    </article>
+                </section>
+           
                 <section class="flexbox-container-2">
                     <article class="cards">
                         <a href="https://thebluwiz.github.io/Giphtionary/">
@@ -77,29 +96,41 @@
                     <article class="cards">
                         <a href="https://github.com/emiliatrentham">
                             <h4 class="cards-h4">Placeholder</h4>
-                            <img class="images" src="Assets/300x200.jpeg" alt="Placeholder" />
+                            <img class="images" src="Assets/horiseon.png" alt="Placeholder" />
                         </a>
                     </article>
 
                     <article class="cards">
                         <a href="https://github.com/emiliatrentham">
                             <h4 class="cards-h4">Placeholder</h4>
-                            <img class="images" src="Assets/284x196.jpeg" alt="Placeholder" />
+                            <img class="images" src="Assets/granite-falls.JPG" alt="Placeholder" />
+                        </a>
+                    </article>
+
+                    <article class="cards">
+                        <a href="https://github.com/emiliatrentham">
+                            <h4 class="cards-h4">Placeholder</h4>
+                            <img class="images" src="Assets/granite-falls.JPG" alt="Placeholder" />
                         </a>
                     </article>
                 </section>
             </div>
-
+     
+         <div>
             <footer>
-                <p class="contact-me">
-                    <a href="tel:281-799-0513">281-799-0513</a>
-                    <a href="mailto:lavernatrentham@gmail.com">lavernatrentham@gmail.com</a>
+                 <ul class="contact-me">   
                     <a href="https://github.com/emiliatrentham">GitHub</a>
-                    <a href="https://www.linkedin.com/in/emilia-trentham-987a59164/">LinkedIn
-                </p>
+                 
+                    <a href="https://www.linkedin.com/in/emilia-trentham-987a59164/">LinkedIn</a>
+                    
+                 </ul>
             </footer>
         </div>
+        </div>
     </main>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </body>
 
 </html>

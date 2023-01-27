@@ -1,29 +1,14 @@
 /* Universal selector */
 * {
-  font-family: Arial, sans-serif;
+  font-family: 'monospace', 'sans-serif';
   box-sizing: border-box;
 }
 
 /* Sets brand criteria */
 h1 {
-  display: flex;
   font-size: 2rem;
-  color: dimgray;
+  color: dimgrey;
   border-style: none;
-  background-color: turquoise;
-  padding: 5px;
-}
-
-/* Sets subtitle criteria */
-h2 {
-  display: flex;
-  margin-top: 225px;
-  margin-right: 70px;
-  float: right;
-  font-size: 1.5rem;
-  color: dimgray;
-  border-style: none;
-  background-color: turquoise;
   padding: 5px;
 }
 
@@ -42,49 +27,40 @@ body {
 }
 
 /* Sets header criteria */
-header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100px;
-  /* padding: 20px; */
-  background-color: dimgrey;
-}
+/* header {
+  padding: 20px;
+  /* background-color: dimgrey; */
 
-/* Chages link color to turquoise plus additional criteria */
-header a,
-a:link,
-a:focus,
-a:active {
-  color: turquoise;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* Sets navigation position */
-.header nav {
-  float: right;
-  margin-right: 40px;
-}
-
-/* Sets navigation link criteria */
-.header nav li {
-  display: inline-block;
-  margin-left: 25px;
-  margin-top: 25px;
-  list-style-type: none;
-  font-size: 22px;
-}
-
-/* Sets main background image criteria */
-.greeting {
-  height: 300px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("santamaria.jpg");
-  background-size: cover;
+.hero-img {
+  background-image: url("./Assets/santamaria.jpg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0000;
+  height: 300px;
+  outline: solid dimgrey 2px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  height: 75%;
+  align-items: flex-start;
+}
+
+.greeting {
+  color: antiquewhite;
+  height: 25%;
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.navbar {
+  font-size: larger;
 }
 
 /* Sets project display */
@@ -96,7 +72,7 @@ a:active {
 .left-container {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 20%;
   align-items: flex-end;
   flex-direction: column;
   font-size: 45px;
@@ -107,11 +83,11 @@ a:active {
 .right-container {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 80%;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
   margin-right: 50px;
   margin-left: 20px;
+  margin-top: 30px;
 }
 
 /* Sets "About Me" image criteria */
@@ -127,12 +103,16 @@ a:active {
 
 /* Sets about me section criteria */
 .About-me {
-  border-left: 2px solid dimgrey;
+  border-left: 2px solid
+    dimgrey;
   color: dimgrey;
   align-self: flex-end;
   margin-bottom: 1.5rem;
 }
 
+#About {
+  margin-top: 30px;
+}
 /* Aligns text in main sections */
 .float-left {
   float: left;
@@ -144,86 +124,62 @@ a:active {
 /* Sets container 1 criteria */
 .flexbox-container-1 {
   border-left: 2px solid dimgrey;
-  padding-right: 1rem;
   color: dimgrey;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  display: inline-block;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 /* Sets container 2 criteria */
 .flexbox-container-2 {
-  border-left: 2px solid dimgrey;
-  padding-right: 1rem;
+  border-left: 2px solid;
   color: dimgrey;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
   flex-direction: row;
-  flex-direction: row;
+  justify-content: center;
 }
 
 /* Sets placeholder criteria */
 .cards {
-  border: 3px solid turquoise;
-  /* flex: 0 0 31%; */
-  margin-top: 5px;
-  margin-left: 5px;
+  border: solid;
   position: relative;
-  display: inline-block;
+  width: 400px;
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-around;
 }
 
 /* Enlarges feature product */
-.flexbox-item-1 {
-  border: 3px solid turquoise;
-  flex: 0 0 90%;
-  margin-top: 10px;
-  margin-left: 1rem;
+.main-card {
+  border: solid;
   position: relative;
-  display: inline-block;
-}
-
-/* Adds feature project glow on hover */
-.flexbox-item-1 {
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-.flexbox-item-1:hover,
-.flexbox-item-1:hover {
-  box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
-}
-
-/* Adds projects glow on hover */
-.cards {
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-  margin-left: 15px;
-}
-.cards:hover,
-.cards:hover {
-  box-shadow: inset 0px 0px 8px rgb(59, 226, 238), 0 0 15px rgb(22, 211, 218);
+  display: block;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
 }
 
 /* Sets larger container image criteria */
 .img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 110%;
-  object-fit: fill;
 }
 
 /* Sets smaller container image criteria */
 .images {
-  width: 250px;
-  height: 200px;
-  object-fit: fill;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Telling main project title where to align over image */
@@ -232,7 +188,6 @@ a:active {
   top: 60%;
   text-align: flex-start;
   border-style: none;
-  background-color: turquoise;
   font-size: 1.5rem;
   color: dimgrey;
   padding: 10px;
@@ -244,7 +199,6 @@ a:active {
   top: 55%;
   text-align: flex-start;
   border-style: none;
-  background-color: turquoise;
   font-size: 1.5rem;
   color: dimgrey;
   padding: 5px;
@@ -252,34 +206,24 @@ a:active {
 
 /*  Contact me section */
 footer {
-  display: flex;
-  border-left: 2px solid dimgrey;
+  border-left: 2px solid;
   padding-right: 1rem;
   color: dimgrey;
-  justify-content: space-between;
-  flex-direction: row;
-  align-content: center;
   height: 70px;
   margin-top: 1.5rem;
   font-size: 1.6rem;
 }
 
 /* Chages link color to grey plus additional criteria */
-.Contact-me a,
+.contact-me a ,
 a:link,
 a:focus,
 a:active {
-  color: turquoise;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
-  margin-bottom: 2rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.contact-me a {
   color: dimgray;
 }
+
 
 /* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 576px) {
@@ -289,6 +233,12 @@ a:active {
     max-width: 100%;
   }
 }
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 
 /* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 768px) {
@@ -304,7 +254,6 @@ a:active {
 @media screen and (max-width: 992px) {
   nav,
   parent {
-    /* flex-direction: column; */
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
@@ -320,14 +269,17 @@ a:active {
   }
 }
 
-
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 576px) {
   .left-container {
     margin-left: 100px;
   }
 }
-
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 768px) {
   .left-container {

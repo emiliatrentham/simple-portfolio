@@ -6,10 +6,12 @@
 
 /* Sets brand criteria */
 h1 {
+  margin-top: 25px;
   font-size: 2rem;
   color: dimgrey;
   border-style: none;
   padding: 5px;
+  font-family: var(--bs-font-monospace);
 }
 
 /* Sets paragraph bottom margin */
@@ -36,56 +38,73 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0000;
-  height: 300px;
-  outline: solid dimgrey 2px;
+  height: 350px;
+  outline: solid rgb(103, 99, 99) 1px;
+}
+
+.navbar-toggler-icon {
+  display: iflex;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: right;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
-  height: 75%;
+  height: 70%;
   align-items: flex-start;
 }
 
-.greeting {
-  color: antiquewhite;
-  height: 25%;
-  height: 25%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 30px;
-}
 
-.navbar {
+.navbar-nav li {
+  background: rgba(0,0,0,0);
+}
+/* 
+.greeting {
+  color: dimgrey;
+  height: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75%;
+  color: #d9dcd6;
+  font-weight: bold;
+  background-color: grey;
+} */
+ 
+.space {
+  margin-left: 10px;
+}
+.navbar-nav a{
   font-size: larger;
+  font-family: var(--bs-font-monospace);
 }
 
 /* Sets project display */
 .parent {
   display: flex;
+  margin-top: 25px;
 }
 
 /* Sets criteria for project left column */
 .left-container {
   display: flex;
   justify-content: space-between;
-  width: 20%;
   align-items: flex-end;
   flex-direction: column;
   font-size: 45px;
   color: dimgrey;
+  margin-right: 25px;
 }
 
 /* Sets criteria for project right columns */
 .right-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: flex-start;
-  margin-right: 50px;
   margin-left: 20px;
   margin-top: 30px;
 }
@@ -116,7 +135,7 @@ body {
 /* Aligns text in main sections */
 .float-left {
   float: left;
-  margin-right: 25px;
+  margin-right: 40px;
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -129,7 +148,6 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 /* Sets container 2 criteria */
@@ -151,7 +169,7 @@ body {
   display: block;
   position: relative;
   overflow: hidden;
-  justify-content: space-around;
+  
 }
 
 /* Enlarges feature product */
@@ -162,6 +180,7 @@ body {
   width: 800px;
   height: 400px;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 /* Sets larger container image criteria */
@@ -184,34 +203,50 @@ body {
 
 /* Telling main project title where to align over image */
 .text-1 {
-  position: absolute;
+  position: relative;
+  z-index: 2;
   top: 60%;
   text-align: flex-start;
   border-style: none;
   font-size: 1.5rem;
   color: dimgrey;
+  background-color: #d9dcd6;
   padding: 10px;
+  margin-right: 70%;
+  margin-left: -5px;
+  border: solid grey 1px;
 }
 
 /* Sets cards criteria */
 .cards-h4 {
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 110px;
   text-align: flex-start;
   border-style: none;
   font-size: 1.5rem;
   color: dimgrey;
-  padding: 5px;
+  background-color: #d9dcd6;
+  padding: 10px;
+  z-index: 2;
+  margin-right: 60%;
+  margin-left: -20px;
+  border: solid grey 1px;
 }
 
 /*  Contact me section */
 footer {
   border-left: 2px solid;
   padding-right: 1rem;
-  color: dimgrey;
+  color: rgb(105, 105, 105);
   height: 70px;
   margin-top: 1.5rem;
   font-size: 1.6rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Chages link color to grey plus additional criteria */
@@ -222,6 +257,7 @@ a:active {
   text-decoration: none;
   cursor: pointer;
   color: dimgray;
+  margin: 20px;
 }
 
 
@@ -252,11 +288,7 @@ a:active {
 
 /* Telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
-  nav,
-  parent {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
+
   h1 {
     margin-bottom: 0px;
     max-height: 60px;
@@ -272,7 +304,8 @@ a:active {
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 576px) {
   .left-container {
-    margin-left: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .cards {
@@ -283,6 +316,10 @@ a:active {
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 768px) {
   .left-container {
-    margin-left: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
+
+
+/* research grid ?? */

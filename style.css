@@ -81,9 +81,7 @@ body {
   background-color: grey;
 } */
  
-.space {
-  margin-left: 10px;
-}
+
 .navbar-nav a{
   font-size: larger;
   font-family: var(--bs-font-monospace);
@@ -106,6 +104,7 @@ body {
   align-items: flex-end;
   flex-direction: column;
   color: dimgrey;
+ 
 }
 
 /* Sets criteria for project right columns */
@@ -127,8 +126,7 @@ body {
 
 /* Sets about me section criteria */
 .About-me {
-  border-left: 2px solid
-    dimgrey;
+  border-left: 2px solid dimgrey;
   color: dimgrey;
   align-self: flex-end;
   margin-bottom: 1.5rem;
@@ -145,7 +143,7 @@ body {
   margin-left: 5px;
 }
 
-/* Sets container 1 criteria */
+/* Sets container 1 criteria
 .flexbox-container-1 {
   border-left: 2px solid dimgrey;
   color: dimgrey;
@@ -156,29 +154,28 @@ body {
 }
 
 /* Sets container 2 criteria */
-.flexbox-container-2 {
+/* .flexbox-container-2 {
   border-left: 2px solid;
   color: dimgrey;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-}
+} */
 
 /* Sets placeholder criteria */
-.cards {
+/* .cards {
   border: solid;
   position: relative;
   width: 400px;
   height: 200px;
   display: block;
-  position: relative;
   overflow: hidden;
   
-}
+} */
 
 /* Enlarges feature product */
-.main-card {
+/* .main-card {
   border: solid;
   position: relative;
   display: block;
@@ -186,28 +183,28 @@ body {
   height: 400px;
   overflow: hidden;
   margin-top: 30px;
-}
+} */
 
 /* Sets larger container image criteria */
-.img-1 {
+/* .img-1 {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-}
+} */
 
 /* Sets smaller container image criteria */
-.images {
+/* .images {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-}
+} */
 
 /* Telling main project title where to align over image */
-.text-1 {
+/* .text-1 {
   position: relative;
   z-index: 2;
   top: 60%;
@@ -220,10 +217,10 @@ body {
   margin-right: 70%;
   margin-left: -5px;
   border: solid grey 1px;
-}
+} */
 
 /* Sets cards criteria */
-.cards-h4 {
+/* .cards-h4 {
   position: relative;
   top: 110px;
   text-align: flex-start;
@@ -236,7 +233,7 @@ body {
   margin-right: 60%;
   margin-left: -20px;
   border: solid grey 1px;
-}
+}  */
 
 /*  Contact me section */
 footer {
@@ -264,6 +261,94 @@ a:active {
   cursor: pointer;
   color: dimgray;
   margin: 20px;
+}
+
+
+.wrapper {
+  border-left: 2px solid dimgrey;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cards
+{
+    width: 302px;
+    height: 299px;
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+}
+
+img
+{
+   border-radius: 10px;
+   width: 302px;
+   height: 299px;
+   border: solid dimgrey 1px;
+   overflow: hidden;
+   object-fit: cover;
+}
+
+.back h2
+{
+    position: absolute;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the cards class with all child div's of class .front */
+.cards > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the cards class with all child div's of class .back */
+.cards > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.cards:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.cards:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
 }
 
 
@@ -328,4 +413,6 @@ a:active {
 }
 
 }
+
+
 

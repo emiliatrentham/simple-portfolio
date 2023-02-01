@@ -1,7 +1,10 @@
-/* Universal selector */
+
 * {
   font-family: 'monospace', 'sans-serif';
   box-sizing: border-box;
+}
+:root {
+--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* Sets brand criteria */
@@ -14,16 +17,16 @@ h1 {
   font-family: var(--bs-font-monospace);
 }
 
+
 /* Sets paragraph bottom margin */
 p {
   margin-bottom: 1rem;
   margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 /* Sets body criteria */
 body {
-  background-color: #d9dcd6;
+  background-color: #f4f3f3;
   padding: 0;
   margin: 0;
 }
@@ -48,7 +51,7 @@ body {
   height: 1.5em;
   vertical-align: right;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
   background-size: 100%;
 }
 
@@ -62,7 +65,7 @@ body {
 
 
 .navbar-nav li {
-  background: rgba(0,0,0,0);
+  background: rgba(255, 250, 250, 0.7);
 }
 /* 
 .greeting {
@@ -86,11 +89,15 @@ body {
   font-family: var(--bs-font-monospace);
 }
 
+.navbar-nav li {
+  background: none;
+}
+
 /* Sets project display */
-.parent {
+/* .parent {
   display: flex;
   margin-top: 25px;
-}
+} */
 
 /* Sets criteria for project left column */
 .left-container {
@@ -98,9 +105,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: column;
-  font-size: 45px;
   color: dimgrey;
-  margin-right: 25px;
 }
 
 /* Sets criteria for project right columns */
@@ -210,7 +215,7 @@ body {
   border-style: none;
   font-size: 1.5rem;
   color: dimgrey;
-  background-color: #d9dcd6;
+  background-color: white;
   padding: 10px;
   margin-right: 70%;
   margin-left: -5px;
@@ -225,7 +230,7 @@ body {
   border-style: none;
   font-size: 1.5rem;
   color: dimgrey;
-  background-color: #d9dcd6;
+  background-color: white;
   padding: 10px;
   z-index: 2;
   margin-right: 60%;
@@ -245,12 +250,13 @@ footer {
   margin-top: 30px;
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
 /* Chages link color to grey plus additional criteria */
-.contact-me a ,
+.footer a ,
 a:link,
 a:focus,
 a:active {
@@ -276,19 +282,8 @@ a:active {
 }
 
 
-/* We are telling the main body and navbar to stack vertically in a column */
-@media screen and (max-width: 768px) {
-  nav,
-  parent {
-    /* flex-direction: column; */
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
 /* Telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
-
   h1 {
     margin-bottom: 0px;
     max-height: 60px;
@@ -299,27 +294,38 @@ a:active {
   .cards {
     flex: 0 0 100%;
   }
+  
 }
 
-/* Telling the left container to maintain a left margin at smaller screen sizes */
-@media screen and (max-width: 576px) {
-  .left-container {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 /* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 768px) {
   .left-container {
     margin-left: 5px;
     margin-right: 5px;
   }
+
+  .navbar-nav li {
+    background: rgba(255, 250, 250, 0.7);
+  }
+  
 }
 
+/* Telling the left container to maintain a left margin at smaller screen sizes */
+@media screen and (max-width: 576px) {
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-/* research grid ?? */
+.left-container {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-nav li {
+  background: rgba(255, 250, 250, 0.7);
+}
+
+}
+

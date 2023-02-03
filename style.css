@@ -1,10 +1,26 @@
-
 * {
-  font-family: 'monospace', 'sans-serif';
+  font-family: "monospace",
+    "sans-serif";
   box-sizing: border-box;
 }
 :root {
---bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-monospace: SFMono-Regular,
+    Menlo, Monaco, Consolas,
+    "Liberation Mono",
+    "Courier New", monospace;
+}
+
+
+
+.greeting {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75%;
+  color: grey;
+  font-weight: bold;
+  background-color: whitesmoke;
 }
 
 /* Sets brand criteria */
@@ -14,27 +30,26 @@ h1 {
   color: dimgrey;
   border-style: none;
   padding: 5px;
-  font-family: var(--bs-font-monospace);
+  font-family: var(
+    --bs-font-monospace
+  );
 }
 
-
+h3 {
+  font-family: var(
+    --bs-font-monospace
+  );
+  font-size: x-large;
+  color: dimgrey;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
 /* Sets paragraph bottom margin */
 p {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
-
-/* Sets body criteria */
-body {
-  background-color: #f4f3f3;
-  padding: 0;
-  margin: 0;
-}
-
-/* Sets header criteria */
-/* header {
-  padding: 20px;
-  /* background-color: dimgrey; */
 
 .hero-img {
   background-image: url("./Assets/santamaria.jpg");
@@ -42,7 +57,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
-  outline: solid rgb(103, 99, 99) 1px;
+  outline: solid
+    rgb(103, 99, 99) 1px;
 }
 
 .navbar-toggler-icon {
@@ -63,54 +79,28 @@ body {
   align-items: flex-start;
 }
 
-
 .navbar-nav li {
-  background: rgba(255, 250, 250, 0.7);
+  background: rgba(
+    255,
+    250,
+    250,
+    0.7
+  );
 }
-/* 
-.greeting {
-  color: dimgrey;
-  height: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 75%;
-  color: #d9dcd6;
-  font-weight: bold;
-  background-color: grey;
-} */
- 
 
-.navbar-nav a{
+.navbar-nav a {
   font-size: larger;
-  font-family: var(--bs-font-monospace);
+  font-family: var(
+    --bs-font-monospace
+  );
 }
 
 .navbar-nav li {
   background: none;
 }
 
-/* Sets project display */
-/* .parent {
-  display: flex;
-  margin-top: 25px;
-} */
-
-/* Sets criteria for project left column */
-.left-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: column;
+.About-me {
   color: dimgrey;
- 
-}
-
-/* Sets criteria for project right columns */
-.right-container {
-  margin-left: 20px;
-  margin-top: 30px;
 }
 
 /* Sets "About Me" image criteria */
@@ -124,250 +114,141 @@ body {
   border-radius: 50%;
 }
 
-/* Sets about me section criteria */
-.About-me {
-  border-left: 2px solid dimgrey;
-  color: dimgrey;
-  align-self: flex-end;
-  margin-bottom: 1.5rem;
-}
-
-#About {
-  margin-top: 30px;
-}
 /* Aligns text in main sections */
-.float-left {
+.text {
   float: left;
   margin-right: 40px;
   margin-top: 5px;
   margin-left: 5px;
 }
 
-/* Sets container 1 criteria
-.flexbox-container-1 {
-  border-left: 2px solid dimgrey;
-  color: dimgrey;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+.row {
+  margin-top: 30px;
 }
 
-/* Sets container 2 criteria */
-/* .flexbox-container-2 {
-  border-left: 2px solid;
-  color: dimgrey;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-} */
-
-/* Sets placeholder criteria */
-/* .cards {
-  border: solid;
-  position: relative;
-  width: 400px;
-  height: 200px;
-  display: block;
-  overflow: hidden;
-  
-} */
-
-/* Enlarges feature product */
-/* .main-card {
-  border: solid;
-  position: relative;
-  display: block;
-  width: 800px;
-  height: 400px;
-  overflow: hidden;
-  margin-top: 30px;
-} */
-
-/* Sets larger container image criteria */
-/* .img-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-} */
-
-/* Sets smaller container image criteria */
-/* .images {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-} */
-
-/* Telling main project title where to align over image */
-/* .text-1 {
-  position: relative;
-  z-index: 2;
-  top: 60%;
-  text-align: flex-start;
-  border-style: none;
-  font-size: 1.5rem;
-  color: dimgrey;
-  background-color: white;
-  padding: 10px;
-  margin-right: 70%;
-  margin-left: -5px;
-  border: solid grey 1px;
-} */
-
-/* Sets cards criteria */
-/* .cards-h4 {
-  position: relative;
-  top: 110px;
-  text-align: flex-start;
-  border-style: none;
-  font-size: 1.5rem;
-  color: dimgrey;
-  background-color: white;
-  padding: 10px;
-  z-index: 2;
-  margin-right: 60%;
-  margin-left: -20px;
-  border: solid grey 1px;
-}  */
-
-/*  Contact me section */
-footer {
-  border-left: 2px solid;
-  padding-right: 1rem;
-  color: rgb(105, 105, 105);
-  height: 70px;
-  margin-top: 1.5rem;
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.col-9 {
+  border-left: 2px solid
+    dimgrey;
 }
 
-/* Chages link color to grey plus additional criteria */
-.footer a ,
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  padding: 0;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: none;
+}
+
+.cards li {
+  list-style-type: none;
+  /* flex: 1; */
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.back h2 {
+  position: absolute;
+}
+
+.back p {
+  position: absolute;
+  top: 50px;
+  font-size: 15px;
+}
+
+.front h2 {
+  position: absolute;
+  padding: 10px;
+  top: 200px;
+  color: #000;
+}
+
+/* style the card class with all child div's of class .front */
+.card > .front {
+  position: absolute;
+  transform: perspective(
+      600px
+    )
+    rotateY(0deg);
+
+  width: 300px;
+  height: 300px;
+
+  backface-visibility: hidden; /* cant see the backside elements as they're turning around */
+  transition: transform 0.5s
+    linear 0s;
+}
+
+/* style the card class with all child div's of class .back */
+.card > .back {
+  position: absolute;
+  transform: perspective(
+      600px
+    )
+    rotateY(180deg);
+  background: #262626;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 0.5s
+    linear 0s;
+}
+
+.card:hover > .front {
+  transform: perspective(
+      600px
+    )
+    rotateY(-180deg);
+}
+
+.card:hover > .back {
+  transform: perspective(
+      600px
+    )
+    rotateY(0deg);
+}
+
 a:link,
 a:focus,
-a:active {
+a:active
+a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: dimgray;
   margin: 20px;
 }
 
-
-.wrapper {
-  border-left: 2px solid dimgrey;
-  margin-bottom: 25px;
-  margin-top: 25px;
+footer {
+  color: dimgray;
+  height: 70px;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 }
 
-.cards
-{
-    width: 302px;
-    height: 299px;
-    padding: 10px;
-    overflow: hidden;
-    display: block;
-    align-items: center;
+footer a{
+  color: dimgray;
 }
 
-img
-{
-   border-radius: 10px;
-   width: 302px;
-   height: 299px;
-   border: solid dimgrey 1px;
-   overflow: hidden;
-   object-fit: cover;
-}
-
-.back h2
-{
-    position: absolute;
-}
-
-.back p
-{
-    position: absolute;
-    top: 50px;
-    font-size: 15px;
-}
-
-.front h2
-{
-    position: absolute;
-    padding: 10px;
-    top: 200px;
-    color: #000;
-}
-
-/* style the cards class with all child div's of class .front */
-.cards > .front
-{
-    position: absolute;
-    transform: perspective(600px) rotateY(0deg);
-    
-    width: 302px;
-    height: 290px;
-    
-    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
-    transition: transform .5s linear 0s;
-}
-
-/* style the cards class with all child div's of class .back */
-.cards > .back
-{
-    position: absolute;
-    transform: perspective(600px) rotateY(180deg);
-    background: #262626;
-    color: #fff;
-    width: 302px;
-    height: 290px;
-    border-radius: 10px;
-    padding: 5px;
-    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
-    transition: transform .5s linear 0s;
-}
-
-.cards:hover > .front
-{
-    transform: perspective(600px) rotateY(-180deg);
-}
-
-.cards:hover > .back
-{
-    transform: perspective(600px) rotateY(0deg);
-}
-
-
-/* We are telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 576px) {
-  nav,
-  parent {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
-
-/* Telling the main body and navbar to stack vertically in a column */
 @media screen and (max-width: 992px) {
   h1 {
     margin-bottom: 0px;
@@ -376,43 +257,48 @@ img
   .cards-h4 {
     font-size: 14px;
   }
-  .cards {
-    flex: 0 0 100%;
-  }
-  
 }
 
-/* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 768px) {
-  .left-container {
-    margin-left: 5px;
+  h3 {
     margin-right: 5px;
+    font-size: large;
   }
 
   .navbar-nav li {
-    background: rgba(255, 250, 250, 0.7);
+    background: rgba(
+      255,
+      250,
+      250,
+      0.7
+    );
   }
-  
 }
 
-/* Telling the left container to maintain a left margin at smaller screen sizes */
 @media screen and (max-width: 576px) {
-.cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  h3 {
+    font-size: large;
+    margin-left: 25px;
+    margin-right: -5px;
+  }
+
+  .navbar-nav li {
+    background: rgba(
+      255,
+      250,
+      250,
+      0.7
+    );
+  }
+  .greeting {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 40%;
+    color: grey;
+    font-weight: bold;
+    background-color: whitesmoke;
+  }
 }
-
-.left-container {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.navbar-nav li {
-  background: rgba(255, 250, 250, 0.7);
-}
-
-}
-
-
-
